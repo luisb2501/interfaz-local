@@ -1,73 +1,60 @@
 # Interfaz Local
 
-¡Bienvenido a **Interfaz Local**! 🚀
+**Interfaz Local** es una herramienta visual para editar y ajustar coordenadas sobre imágenes, ideal para anotaciones, datasets de visión computacional, o cualquier tarea que requiera marcar puntos y cajas delimitadoras sobre imágenes y exportar/importar los datos en formato JSON.
 
-## ¿Qué es Interfaz Local?
+## ¿Qué puedes hacer con esta interfaz?
 
-**Interfaz Local** es una aplicación diseñada para facilitar la interacción con sistemas o servicios de manera local, proporcionando una interfaz gráfica intuitiva, moderna y eficiente. Este proyecto está pensado para usuarios y desarrolladores que buscan una solución rápida y personalizable para gestionar procesos, visualizar información o controlar dispositivos desde su propio equipo.
+- **Cargar una imagen** y visualizarla en un canvas interactivo.
+- **Importar un archivo JSON** con coordenadas de puntos (`labels`) y cajas delimitadoras (`bounding_boxes`).
+- **Editar visualmente** la posición de los puntos arrastrándolos sobre la imagen.
+- **Ajustar el tamaño de los puntos** para mayor precisión visual.
+- **Editar el JSON directamente** desde un editor de texto integrado.
+- **Exportar el JSON actualizado** con las nuevas coordenadas.
 
-## Características principales
+## ¿Para quién es útil?
 
-- **Interfaz amigable:** Diseño limpio y fácil de usar.
-- **Despliegue local:** No requiere conexión a internet ni servidores externos.
-- **Personalizable:** Estructura modular para adaptarse a diferentes necesidades.
-- **Rápida instalación:** Listo para usarse en minutos.
-- **Código abierto:** Puedes modificar y adaptar el proyecto a tus requerimientos.
+- Equipos de visión computacional y machine learning que preparan datasets.
+- Profesionales que necesitan marcar puntos de referencia en imágenes.
+- Cualquier persona que requiera una interfaz sencilla para manipular coordenadas gráficas.
 
-## ¿Para qué sirve?
+## ¿Cómo funciona?
 
-- Automatización de tareas locales.
-- Visualización y monitoreo de datos en tiempo real.
-- Control de dispositivos conectados al equipo.
-- Prototipado rápido de interfaces para pruebas o demostraciones.
-
-## Tecnologías utilizadas
-
-- **[Aquí puedes listar las tecnologías principales, por ejemplo:]**
-  - Node.js
-  - Electron
-  - React / Vue / Angular (según corresponda)
-  - CSS moderno (Tailwind, Bootstrap, etc.)
-
-## Instalación
-
-1. Clona este repositorio:
-   ```bash
-   git clone https://github.com/tu-usuario/interfaz-local.git
+1. **Carga una imagen** (JPG, PNG, etc.).
+2. **Carga un archivo JSON** con la estructura:
+   ```json
+   {
+     "labels": [[x1, y1], [x2, y2], ...],
+     "bounding_boxes": [x1, y1, x2, y2]
+   }
    ```
-2. Entra a la carpeta del proyecto:
-   ```bash
-   cd interfaz-local
-   ```
-3. Instala las dependencias:
+3. **Ajusta los puntos** arrastrándolos sobre la imagen.
+4. **Modifica el JSON** si lo deseas, desde el editor de texto.
+5. **Descarga el JSON actualizado** para usarlo en tus proyectos.
+
+## Instalación y uso
+
+1. Clona este repositorio.
+2. Instala las dependencias:
    ```bash
    npm install
    ```
-4. Inicia la aplicación:
+3. Inicia la aplicación:
    ```bash
    npm start
    ```
+4. Accede a la interfaz en tu navegador y comienza a trabajar con tus imágenes y coordenadas.
 
-## Estructura del proyecto
+## Tecnologías utilizadas
 
-```
-interfaz-local/
-├── src/           # Código fuente principal
-├── public/        # Archivos estáticos
-├── package.json   # Configuración de dependencias y scripts
-├── README.md      # Este archivo
-└── ...otros archivos
-```
+- **React** para la interfaz de usuario.
+- **Tailwind CSS** (o similar) para estilos rápidos y modernos.
+- **Canvas API** para renderizado y manipulación gráfica.
 
-## Contribuciones
+## Captura de pantalla
 
-¡Las contribuciones son bienvenidas! Si tienes ideas, mejoras o encuentras algún problema, no dudes en abrir un issue o enviar un pull request.
-
-## Licencia
-
-Este proyecto está bajo la licencia MIT. Consulta el archivo LICENSE para más detalles.
+![Demo de la interfaz](demo.png) <!-- Puedes agregar una imagen de ejemplo aquí -->
 
 ---
 
-**Interfaz Local** — Tu puente entre el usuario y el poder de tu equipo, ¡sin complicaciones!
+¡Haz tus anotaciones de manera visual, rápida y sencilla con **Interfaz Local**!
 
